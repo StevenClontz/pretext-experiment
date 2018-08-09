@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-08-09T16:10:33Z    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Determine if a map between vector spaces of polynomials is linear or not.</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\newcommand{\IR}{\mathbb{R}}
+\newcommand{\P}{\mathcal{P}}
+\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="tbil-example.html"><span class="title">Team-Based Inquiry Learning - Linear Algebra</span></a></h1>
+<p class="byline">Steven Clontz &amp; Drew Lewis</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-1.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-1.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">Module A: Algebra of Linear Transformations</span></a></h2>
+<ul><li><a href="section-standard-A1.html" data-scroll="section-standard-A1" class="active">Determine if a map between vector spaces of polynomials is linear or not.</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-standard-A1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Determine if a map between vector spaces of polynomials is linear or not.</span>
+</h2>
+<a href="section-standard-A1.html" class="permalink">¶</a><section class="introduction" id="introduction-2"><p id="p-3">This is where I can write a short introductory slide (or not) to the section.</p></section><article class="definition-like" id="definition-1"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">1.1.1</span>
+</h6>
+<p id="p-4">A <em class="emphasis">linear transformation</em> (also known as a <em class="emphasis">linear map</em>) is a map between vector spaces that preserves the vector space operations.</p>
+<p id="p-5">More precisely, if \(V\) and \(W\) are vector spaces, a map \(T:V\rightarrow W\) is called a linear transformation if</p>
+<ol class="decimal">
+<li id="li-1">\(T(\vec{v}+\vec{w}) = T(\vec{v})+T(\vec{w})\) for any \(\vec{v},\vec{w} \in V\text{.}\)</li>
+<li id="li-2">\(T(c\vec{v}) = cT(\vec{v})\) for any \(c \in \IR,\vec{v} \in V\text{.}\)</li>
+</ol>
+<p id="p-6">In other words, a map is linear when vector space operations can be applied before or after the transformation without affecting the result.</p></article><article class="example-like"><a knowl="" class="id-ref" refid="hk-example-1" id="example-1"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">1.1.2</span>
+</h6></a></article><div id="hk-example-1" class="hidden-content tex2jax_ignore"><article class="example-like"><p id="p-7">Let \(T : \IR^3 \rightarrow \IR^2\) be given by</p>
+<div class="displaymath">
+\begin{equation*}
+T\left(\begin{bmatrix} x \\ y \\ z \end{bmatrix} \right)
+=
+\begin{bmatrix} x-z \\ 3y \end{bmatrix}
+\end{equation*}
+</div>
+<p id="p-8">To show that \(T\) is linear, we must verify...</p>
+<div class="displaymath">
+\begin{equation*}
+T\left(
+\begin{bmatrix} x \\ y \\ z \end{bmatrix} +
+\begin{bmatrix} u \\ v \\ w \end{bmatrix}
+\right)
+=
+T\left(
+\begin{bmatrix} x+u \\ y+v \\ z+w \end{bmatrix}
+\right) =
+\begin{bmatrix} (x+u)-(z+w) \\ 3(y+v) \end{bmatrix}
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+T\left(
+\begin{bmatrix} x \\ y \\ z \end{bmatrix}
+\right) + T\left(
+\begin{bmatrix} u \\ v \\ w \end{bmatrix}
+\right)
+=
+\begin{bmatrix} x-z \\ 3y \end{bmatrix} +
+\begin{bmatrix} u-w \\ 3v \end{bmatrix}=
+\begin{bmatrix} (x+u)-(z+w) \\ 3(y+v) \end{bmatrix}
+\end{equation*}
+</div>
+<p id="p-9">And also...</p>
+<div class="displaymath">
+\begin{equation*}
+T\left(c\begin{bmatrix} x \\ y \\ z \end{bmatrix} \right)
+=
+T\left(\begin{bmatrix} cx \\ cy \\ cz \end{bmatrix} \right)
+=
+\begin{bmatrix} cx-cz \\ 3cy \end{bmatrix}
+\text{ and }
+cT\left(\begin{bmatrix} x \\ y \\ z \end{bmatrix} \right)
+=
+c\begin{bmatrix} x-z \\ 3y \end{bmatrix}
+=
+\begin{bmatrix} cx-cz \\ 3cy \end{bmatrix}
+\end{equation*}
+</div>
+<p id="p-10">Therefore \(T\) is a linear transformation.</p></article></div>
+<article class="example-like"><a knowl="" class="id-ref" refid="hk-example-2" id="example-2"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">1.1.3</span>
+</h6></a></article><div id="hk-example-2" class="hidden-content tex2jax_ignore"><article class="example-like"><p id="p-11">Let \(T : \IR^2 \rightarrow \IR^4\) be given by</p>
+<div class="displaymath">
+\begin{equation*}
+T\left(\begin{bmatrix} x \\ y \end{bmatrix} \right)
+=
+\begin{bmatrix} x+y \\ x^2 \\ y+3 \\ y-2^x \end{bmatrix}
+\end{equation*}
+</div>
+<p id="p-12">To show that \(T\) is not linear, we only need to find one counterexample.</p>
+<div class="displaymath">
+\begin{equation*}
+T\left(
+\begin{bmatrix} 0 \\ 1 \end{bmatrix} +
+\begin{bmatrix} 2 \\ 3 \end{bmatrix}
+\right)
+=
+T\left(
+\begin{bmatrix} 2 \\ 4 \end{bmatrix}
+\right) =
+\begin{bmatrix} 6 \\ 4 \\ 7 \\ 0 \end{bmatrix}
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+T\left(
+\begin{bmatrix} 0 \\ 1 \end{bmatrix}
+\right) + T\left(
+\begin{bmatrix} 2 \\ 3\end{bmatrix}
+\right)
+=
+\begin{bmatrix} 1 \\ 0 \\ 4 \\ -1 \end{bmatrix} +
+\begin{bmatrix} 5 \\ 4 \\ 6 \\ -5 \end{bmatrix}
+=
+\begin{bmatrix} 6 \\ 4 \\ 10 \\ -6 \end{bmatrix}
+\end{equation*}
+</div>
+<p id="p-13">Since the resulting vectors are different, \(T\) is not a linear transformation.</p></article></div>
+<article class="theorem-like" id="fact-1"><h6 class="heading">
+<span class="type">Fact</span> <span class="codenumber">1.1.4</span>
+</h6>
+<p id="p-14">A map between Euclidean spaces \(T:\IR^n\to\IR^m\) is linear exactly when every component of the output is a linear combination of the components of \(\IR^n\text{.}\)</p>
+<p id="p-15">For example, the following map is definitely linear because \(x-z\) and \(3y\) are linear combinations of \(x,y,z\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+T\left(\begin{bmatrix} x \\ y \\ z \end{bmatrix} \right)
+=
+\begin{bmatrix} x-z \\ 3y \end{bmatrix}
+=
+\begin{bmatrix} 1x+0y-1z \\ 0x+3y+0z \end{bmatrix}
+\end{equation*}
+</div>
+<p id="p-16">But this map is not linear because \(x^2\text{,}\) \(y+3\text{,}\) and \(y-2^x\) are not linear combinations (even though \(x+y\) is):</p>
+<div class="displaymath">
+\begin{equation*}
+T\left(\begin{bmatrix} x \\ y \end{bmatrix} \right)
+=
+\begin{bmatrix} x+y \\ x^2 \\ y+3 \\ y-2^x \end{bmatrix}
+\end{equation*}
+</div></article><article class="example-like" id="activity-1"><h6 class="heading">
+<span class="type">Activity</span> <span class="codenumber">1.1.1</span>
+</h6>
+<p id="p-17"><em class="emphasis">(~5 min)</em></p>
+<p id="p-18">Recall the following rules from calculus, where \(D:\P\to\P\) is the derivative map defined by \(D(f(x))=f'(x)\) for each polynomial \(f\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+D(f+g)=f'(x)+g'(x)
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+D(cf(x))=cf'(x)
+\end{equation*}
+</div>
+<p id="p-19">What can we conclude from these rules?</p>
+<ol class="upper-alpha">
+<li id="li-3">\(\P\) is not a vector space</li>
+<li id="li-4">\(D\) is a linear map</li>
+<li id="li-5">\(D\) is not a linear map</li>
+</ol></article><article class="example-like" id="activity-2"><h6 class="heading">
+<span class="type">Activity</span> <span class="codenumber">1.1.2</span>
+</h6>
+<p id="p-20"><em class="emphasis">(~10 min)</em></p>
+<p id="p-21">Let the polynomial maps \(S: \P^4 \rightarrow \P^3\) and \(T: \P^4 \rightarrow \P^3\) be defined by</p>
+<div class="displaymath">
+\begin{equation*}
+S(f(x)) = 2f'(x)-f''(x) \hspace{3em} T(f(x)) = f'(x)+x^3
+\end{equation*}
+</div>
+<p id="p-22">Compute \(S(x^4+x)\text{,}\) \(S(x^4)+S(x)\text{,}\) \(T(x^4+x)\text{,}\) and \(T(x^4)+T(x)\text{.}\) Which of these maps is definitely not linear?</p></article><article class="theorem-like" id="fact-2"><h6 class="heading">
+<span class="type">Fact</span> <span class="codenumber">1.1.5</span>
+</h6>
+<p id="p-23">If \(L:V\to W\) is linear, then</p>
+<div class="displaymath">
+\begin{equation*}
+L(\vec z)=L(0\vec v)=0L(\vec v)=\vec z
+\end{equation*}
+</div>
+<p>where \(\vec z\) is the additive identity of the vector spaces \(V,W\text{.}\)</p>
+<p id="p-24">Put another way, an easy way to prove that a map like \(T(f(x)) = f'(x)+x^3\) can't be linear is because</p>
+<div class="displaymath">
+\begin{equation*}
+T(0)=\frac{d}{dx}[0]+x^3=0+x^3=x^3\not=0.
+\end{equation*}
+</div></article><article class="remark-like" id="note-1"><h6 class="heading">
+<span class="type">Note</span> <span class="codenumber">1.1.6</span>
+</h6>
+<p id="p-25">Showing \(L:V\to W\) is not a linear transformation can be done by finding an example for any one of the following.</p>
+<ul class="disc">
+<li id="li-6">Show \(L(\vec z)\not=\vec z\) (where \(\vec z\) is the additive identity of \(L\) and \(W\)).</li>
+<li id="li-7">Find \(\vec v,\vec w\in V\) such that \(L(\vec v+\vec w)\not=L(\vec v)+L(\vec w)\text{.}\)</li>
+<li id="li-8">Find \(\vec v\in V\) and \(c\in \IR\) such that \(L(c\vec v)\not=cL(\vec v)\text{.}\)</li>
+</ul>
+<p id="p-26">Otherwise, \(L\) can be shown to be linear by proving the following in general.</p>
+<ul class="disc">
+<li id="li-9">For all \(\vec v,\vec w\in V\text{,}\) \(L(\vec v+\vec w)\not=L(\vec v)+L(\vec w)\text{.}\)</li>
+<li id="li-10">For all \(\vec v\in V\) and \(c\in \IR\text{,}\) \(L(c\vec v)\not=cL(\vec v)\text{.}\)</li>
+</ul>
+<p id="p-27">Note the similarities between this process and showing that a subset of a vector space is/isn't a subspace.</p></article><article class="example-like" id="activity-3"><h6 class="heading">
+<span class="type">Activity</span> <span class="codenumber">1.1.3</span>
+</h6>
+<div class="introduction" id="introduction-3">
+<p id="p-28"><em class="emphasis">(~15 min)</em></p>
+<p id="p-29">Continue to consider \(S: \P^4 \rightarrow \P^3\) defined by</p>
+<div class="displaymath">
+\begin{equation*}
+S(f(x)) = 2f'(x)-f''(x)
+\end{equation*}
+</div>
+</div>
+<article class="exercise-like" id="task-1"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-30">Verify that</p>
+<div class="displaymath">
+\begin{equation*}
+S(f(x)+g(x))=2f'(x)+2g'(x)-f''(x)-g''(x)
+\end{equation*}
+</div>
+<p>is equal to \(S(f(x))+S(g(x))\) for all polynomials \(f,g\text{.}\)</p></article><article class="exercise-like" id="task-2"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-31">Verify that \(S(cf(x))\) is equal to \(cS(f(x))\) for all real numbers \(c\) and polynomials \(f\text{.}\)</p></article><article class="exercise-like" id="task-3"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-32">Is \(S\) linear?</p></article></article><article class="example-like" id="activity-4"><h6 class="heading">
+<span class="type">Activity</span> <span class="codenumber">1.1.4</span>
+</h6>
+<div class="introduction" id="introduction-4">
+<p id="p-33"><em class="emphasis">(~20 min)</em></p>
+<p id="p-34">Let the polynomial maps \(S: \P \rightarrow \P\) and \(T: \P \rightarrow \P\) be defined by</p>
+<div class="displaymath">
+\begin{equation*}
+S(f(x)) = (f(x))^2 \hspace{3em} T(f(x)) = 3xf(x^2)
+\end{equation*}
+</div>
+</div>
+<article class="exercise-like" id="task-4"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-35">Note that \(S(0)=0\) and \(T(0)=0\text{.}\) So instead, show that \(S(x+1)\not= S(x)+S(1)\) to verify that \(S\) is not linear.</p></article><article class="exercise-like" id="task-5"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-36">Prove that \(T\) is linear by verifying that \(T(f(x)+g(x))=T(f(x))+T(g(x))\) and \(T(cf(x))=cT(f(x))\text{.}\)</p></article></article></section></div></main>
+</div>
+</body>
+</html>
