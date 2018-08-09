@@ -50,8 +50,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </macros>
     </docinfo>
 
-    <article xml:id="tbil-example">
-        <title>Module A: Algebra of Linear Transformations</title>
+    <book xml:id="tbil-example">
+        <title>Team-Based Inquiry Learning - Linear Algebra</title>
 
         <frontmatter>
 
@@ -81,6 +81,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
              for practice.
            </p>
         </introduction>
+        <chapter><title>Module A: Algebra of Linear Transformations</title>
         <section xml:id="section-standard-A1">
           <title>
 Determine if a map between vector spaces of polynomials is linear or not.
@@ -262,7 +263,7 @@ are not linear combinations (even though <m>x+y</m> is):
   </ol>
 </activity>
 
-<activity>
+<activity><p><em>(~10 min)</em></p>
   <p>
 Let the polynomial maps <m>S: \P^4 \rightarrow \P^3</m>
 and <m>T: \P^4 \rightarrow \P^3</m> be defined by
@@ -320,6 +321,55 @@ space is/isn't a subspace.
   </p>
 </note>
 
+<activity>
+<introduction>
+<p><em>(~15 min)</em></p>
+  <p>
+Continue to consider <m>S: \P^4 \rightarrow \P^3</m> defined by
+  </p>
+<me>S(f(x)) = 2f'(x)-f''(x)</me>
+</introduction>
+<task>
+<p>
+  Verify that
+  <me>S(f(x)+g(x))=2f'(x)+2g'(x)-f''(x)-g''(x)</me>
+  is equal to <m>S(f(x))+S(g(x))</m> for all polynomials <m>f,g</m>.
+</p>
+</task>
+<task>
+<p>
+  Verify that <m>S(cf(x))</m> is equal to <m>cS(f(x))</m> for all real numbers <m>c</m>
+  and polynomials <m>f</m>. 
+</p>
+</task>
+<task>
+<p>
+  Is <m>S</m> linear?
+</p>
+</task>
+</activity>
+
+<activity><introduction><p><em>(~20 min)</em></p>
+  <p>
+Let the polynomial maps <m>S: \P \rightarrow \P</m>
+and <m>T: \P \rightarrow \P</m> be defined by
+  </p>
+<me>S(f(x)) = (f(x))^2 \hspace{3em} T(f(x)) = 3xf(x^2)</me>
+</introduction>
+<task>
+  <p>
+Note that <m>S(0)=0</m> and <m>T(0)=0</m>. So instead,
+show that <m>S(x+1)\not= S(x)+S(1)</m> to verify that <m>S</m> is not linear.
+  </p>
+</task>
+<task>
+  <p>
+Prove that <m>T</m> is linear by verifying that <m>T(f(x)+g(x))=T(f(x))+T(g(x))</m>
+and <m>T(cf(x))=cT(f(x))</m>.
+  </p>
+</task>
+</activity>
+
 <!--
 <theorem><statement>foo</statement><proof><p>bar</p></proof></theorem>
 <fact><statement>foo</statement><proof><p>bar</p></proof></fact>
@@ -345,6 +395,7 @@ space is/isn't a subspace.
 -->
 
 </section>
-    </article>
+    </chapter>
+    </book>
 
 </mathbook>
