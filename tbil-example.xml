@@ -45,7 +45,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <docinfo>
         <macros>
         \newcommand{\IR}{\mathbb{R}}
-        \newcommand{\P}{\mathcal{P}}
+        \newcommand{\Poly}{\mathcal{P}}
         \newcommand{\doubler}[1]{2#1}
         </macros>
     </docinfo>
@@ -243,7 +243,7 @@ are not linear combinations (even though <m>x+y</m> is):
 
 <activity><p><em>(~5 min)</em></p>
   <p>
-  Recall the following rules from calculus, where <m>D:\P\to\P</m>
+  Recall the following rules from calculus, where <m>D:\Poly\to\Poly</m>
   is the derivative map defined by <m>D(f(x))=f'(x)</m> for each
   polynomial <m>f</m>.
   </p>
@@ -257,7 +257,7 @@ are not linear combinations (even though <m>x+y</m> is):
   What can we conclude from these rules?
   </p>
   <ol label="A">
-    <li> <m>\P</m> is not a vector space</li>
+    <li> <m>\Poly</m> is not a vector space</li>
     <li> <m>D</m> is a linear map</li>
     <li> <m>D</m> is not a linear map</li>
   </ol>
@@ -265,8 +265,8 @@ are not linear combinations (even though <m>x+y</m> is):
 
 <activity><p><em>(~10 min)</em></p>
   <p>
-Let the polynomial maps <m>S: \P^4 \rightarrow \P^3</m>
-and <m>T: \P^4 \rightarrow \P^3</m> be defined by
+Let the polynomial maps <m>S: \Poly^4 \rightarrow \Poly^3</m>
+and <m>T: \Poly^4 \rightarrow \Poly^3</m> be defined by
   </p>
 <me>S(f(x)) = 2f'(x)-f''(x) \hspace{3em} T(f(x)) = f'(x)+x^3</me>
   <p>
@@ -325,7 +325,7 @@ space is/isn't a subspace.
 <introduction>
 <p><em>(~15 min)</em></p>
   <p>
-Continue to consider <m>S: \P^4 \rightarrow \P^3</m> defined by
+Continue to consider <m>S: \Poly^4 \rightarrow \Poly^3</m> defined by
   </p>
 <me>S(f(x)) = 2f'(x)-f''(x)</me>
 </introduction>
@@ -351,8 +351,8 @@ Continue to consider <m>S: \P^4 \rightarrow \P^3</m> defined by
 
 <activity><introduction><p><em>(~20 min)</em></p>
   <p>
-Let the polynomial maps <m>S: \P \rightarrow \P</m>
-and <m>T: \P \rightarrow \P</m> be defined by
+Let the polynomial maps <m>S: \Poly \rightarrow \Poly</m>
+and <m>T: \Poly \rightarrow \Poly</m> be defined by
   </p>
 <me>S(f(x)) = (f(x))^2 \hspace{3em} T(f(x)) = 3xf(x^2)</me>
 </introduction>
