@@ -269,7 +269,7 @@ are not linear combinations (even though <m>x+y</m> is):
   </ol>
 </activity>
 
-<activity><prelude>(~10 min)</prelude>
+<activity><p><em>(~10 min)</em></p>
   <p>
 Let the polynomial maps <m>S: \Poly^4 \rightarrow \Poly^3</m>
 and <m>T: \Poly^4 \rightarrow \Poly^3</m> be defined by
@@ -354,6 +354,19 @@ Continue to consider <m>S: \Poly^4 \rightarrow \Poly^3</m> defined by
 </p>
 </task>
 </activity>
+
+<p>
+I suppose it's theoretically possible someone wants a bare paragraph
+or two in slides.
+</p>
+<p>
+So let's assume that this paragraph and the previous paragraph should
+be on a slide together.
+</p>
+<p>
+But let's also assume that this sentence is extra text that should
+only be in the textbook, not in the slides.
+</p>
 
 <activity><introduction><p><em>(~20 min)</em></p>
   <p>
