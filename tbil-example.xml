@@ -72,23 +72,23 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         </frontmatter>
 
+        <chapter><title>Module A: Algebra of Linear Transformations</title>
         <introduction>
            <p>
-             A linear transformation (or linear map) is a rule that describes 
-             how to transform vectors in one vector space into vectors
-             in another vector space. Here I am adding a <q>quote</q> just
-             for practice.
+             In this module, we will explore how to describe transformations
+             from one vector space into another. For example, the structure of
+             a three-dimensional video game may be modeled as vectors in
+             <m>\IR^3</m>, but those vectors must be transformed into
+             <m>\IR^2</m> to be displayed on a two-dimensional screen.
            </p>
         </introduction>
-        <chapter><title>Module A: Algebra of Linear Transformations</title>
         <section xml:id="section-standard-A1">
           <title>
 Determine if a map between vector spaces of polynomials is linear or not.
           </title>
           <introduction>
             <p>
-This is where I can write a short introductory slide (or not)
-to the section.
+This is a generic introduction to this section.
             </p>
           </introduction>
 
@@ -212,6 +212,12 @@ Since the resulting vectors are different,
   </p>
 </example>
 
+<p>
+Here is some text I'm adding that I won't want to be
+in slides, but would be useful context for the student
+or instructor when viewing the full textbook.
+</p>
+
 <fact>
   <p>
 A map between Euclidean spaces <m>T:\IR^n\to\IR^m</m> is linear
@@ -256,13 +262,14 @@ are not linear combinations (even though <m>x+y</m> is):
   What can we conclude from these rules?
   </p>
   <ol label="A">
+    <li> <m>\Poly</m> is a subspace of <m>\IR^3</m></li>
     <li> <m>\Poly</m> is not a vector space</li>
     <li> <m>D</m> is a linear map</li>
     <li> <m>D</m> is not a linear map</li>
   </ol>
 </activity>
 
-<activity><p><em>(~10 min)</em></p>
+<activity><prelude>(~10 min)</prelude>
   <p>
 Let the polynomial maps <m>S: \Poly^4 \rightarrow \Poly^3</m>
 and <m>T: \Poly^4 \rightarrow \Poly^3</m> be defined by
