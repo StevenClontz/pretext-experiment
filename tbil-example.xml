@@ -22,31 +22,30 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- To process this file do                                                                      -->
 <!--                                                                                              -->
 <!-- (1) LaTeX/PDF:                                                                               -->
-<!--     xsltproc mathbook/xsl/mathbook-latex.xsl minimal.xml                                     -->
+<!--     xsltproc pretext/xsl/mathbook-latex.xsl minimal.xml                                     -->
 <!--     pdflatex minimal.tex                                                                     -->
 <!--     xelatex minimal.tex                                                                      -->
 <!--                                                                                              -->
 <!-- (2) HTML:                                                                                    -->
-<!--     xsltproc mathbook/xsl/mathbook-html.xsl minimal.xml                                      -->
+<!--     xsltproc pretext/xsl/mathbook-html.xsl minimal.xml                                      -->
 <!--     <browswer>  minimal.html                                                                 -->
 <!--                                                                                              -->
 <!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
 <!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
-<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-smc.xsl minimal.xml          -->
+<!--     xsltproc -X-stringparam chunk.level 0 pretext/xsl/mathbook-smc.xsl minimal.xml          -->
 <!--     <CoCalc> minimal.sagews                                                                  -->
 <!--                                                                                              -->
 <!-- (4) Sage doctesting                                                                          -->
 <!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
-<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-sage-doctest.xsl minimal.xml -->
+<!--     xsltproc -X-stringparam chunk.level 0 pretext/xsl/mathbook-sage-doctest.xsl minimal.xml -->
 <!--     <read further instructions in> minimal.py                                                -->
 
- <mathbook>
+ <pretext>
 
     <docinfo>
         <macros>
         \newcommand{\IR}{\mathbb{R}}
         \newcommand{\Poly}{\mathcal{P}}
-        \newcommand{\doubler}[1]{2#1}
         </macros>
     </docinfo>
 
@@ -57,7 +56,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
             <titlepage>
                 <author>
-                    <personname>Steven Clontz <ampersand /> Drew Lewis</personname>
+                    <personname>Steven Clontz &amp; Drew Lewis</personname>
                     <institution>University of South Alabama</institution>
                 </author>
                 <date><today /></date>
@@ -369,33 +368,8 @@ and <m>T(cf(x))=cT(f(x))</m>.
   </p>
 </task>
 </activity>
-
-<!--
-<theorem><statement>foo</statement><proof><p>bar</p></proof></theorem>
-<fact><statement>foo</statement><proof><p>bar</p></proof></fact>
-<definition><statement>foo</statement></definition>
-<note><p>asdf</p></note>
-<activity><p>asdf</p></activity>
-
-<example><p>asdf</p></example>
-    <assemblage xml:id="extreme-value-theorem">
-      <title>The Extreme Value Theorem</title>
-      <p>
-            <idx><h>extreme value theorem</h></idx>
-        If <m>f</m> is a continuous function on a closed interval <m>[a,b]</m>,
-        then <m>f</m> attains both an absolute minimum and absolute maximum on <m>[a,b]</m>.
-        That is, for some value <m>x_m</m> such that <m>a \le x_m \le b</m>,
-        it follows that <m>f(x_m) \le f(x)</m> for all <m>x</m> in <m>[a,b]</m>.
-        Similarly, there is a value <m>x_M</m> in <m>[a,b]</m> such that
-        <m>f(x_M) \ge f(x)</m> for all <m>x</m> in <m>[a,b]</m>.
-        Letting <m>m = f(x_m)</m> and <m>M = f(x_M)</m>,
-        it follows that <m>m \le f(x) \le M</m> for all <m>x</m> in <m>[a,b]</m>.
-      </p>
-</assemblage>
--->
-
 </section>
     </chapter>
     </book>
 
-</mathbook>
+</pretext>
