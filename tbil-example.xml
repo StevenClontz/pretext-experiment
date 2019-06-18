@@ -62,7 +62,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 <date><today /></date>
             </titlepage>
 
-            <abstract>
+            <abstract slide="single">
                 <p>
                   This is a port of the first standard covered in Clontz and 
                   Lewis's Team-Based Inquiry Learning module on Linear 
@@ -73,7 +73,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </frontmatter>
 
         <chapter><title>Module A: Algebra of Linear Transformations</title>
-        <introduction>
+        <introduction slide="single">
            <p>
              In this module, we will explore how to describe transformations
              from one vector space into another. For example, the structure of
@@ -86,13 +86,13 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
           <title>
 Determine if a map between vector spaces of polynomials is linear or not.
           </title>
-          <introduction>
+          <introduction slide="single">
             <p>
 This is a generic introduction to this section.
             </p>
           </introduction>
 
-<definition>
+<definition slide="single">
   <statement>
     <p>
 A <em>linear transformation</em> (also known as a <em>linear map</em>)
@@ -115,7 +115,7 @@ can be applied before or after the transformation without affecting the result.
   </statement>
 </definition>
 
-<example>
+<example slide="single">
   <p>
 Let <m>T : \IR^3 \rightarrow \IR^2</m> be given by
   </p>
