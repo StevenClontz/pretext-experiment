@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-08-09T16:40:24Z    *-->
+<!--*    on 2019-06-18T17:59:36Z    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <html lang="en-US">
@@ -12,13 +12,19 @@
 <title>Team-Based Inquiry Learning - Linear Algebra</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
-        inlineMath: [['\\(','\\)']],
+        inlineMath: [['\\(','\\)']]
     },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
         positionToHash: false,
         equationNumbers: { autoNumber: "none", useLabelIds: true, },
@@ -35,15 +41,24 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\newcommand{\IR}{\mathbb{R}}
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\IR}{\mathbb{R}}
 \newcommand{\Poly}{\mathcal{P}}
-\newcommand{\doubler}[1]{2#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -57,21 +72,25 @@ MathJax.Hub.Config({
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Prev</span><span id="upbutton" class="up-button button disabled toolbar-item">Up</span><a id="nextbutton" class="next-button button toolbar-item" href="frontmatter-1.html" title="Next">Next</a></span></div>
-<button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><a class="next-button button toolbar-item" href="frontmatter-1.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
-<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">Module A: Algebra of Linear Transformations</span></a></h2>
-<ul><li><a href="section-standard-A1.html" data-scroll="section-standard-A1">Determine if a map between vector spaces of polynomials is linear or not.</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+<nav id="toc"><ul>
+<li class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">Module A: Algebra of Linear Transformations</span></a><ul><li><a href="section-standard-A1.html" data-scroll="section-standard-A1">Determine if a map between vector spaces of polynomials is linear or not.</a></li></ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="mathbook-content"><section class="book" id="tbil-example"><section class="introduction" id="introduction-1"><p id="p-2">A linear transformation (or linear map) is a rule that describes how to transform vectors in one vector space into vectors in another vector space. Here I am adding a “quote” just for practice.</p></section><nav class="summary-links"><ul>
+<main class="main"><div id="content" class="pretext-content"><section class="book" id="tbil-example"><section class="introduction" id="introduction-1"><p id="p-2">A linear transformation (or linear map) is a rule that describes how to transform vectors in one vector space into vectors in another vector space. Here I am adding a “quote” just for practice.</p></section><nav class="summary-links"><ul>
 <li><a href="frontmatter-1.html"><span class="title">Front Matter</span></a></li>
 <li><a href="chapter-1.html"><span class="codenumber">1</span> <span class="title">Module A: Algebra of Linear Transformations</span></a></li>
 </ul></nav></section></div></main>
 </div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
 </body>
 </html>
