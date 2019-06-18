@@ -1,3 +1,5 @@
 # pretext-experiment
 
-My first PreTeXt document
+A sample section of TBIL linear algebra materials.
+Ideally, this should produce both a textbook
+and slides with minimal duplication.
