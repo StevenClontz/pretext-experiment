@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<pretext><slideshow><title>Linear Algebra</title><subtitle>For Team-Based Inquiry</subtitle><frontmatter><titlepage><xml:value-of select="pretext/book/frontmatter/titlepage"/></titlepage></frontmatter><section><slide><title>Module A: Algebra of Linear Transformations</title><ul><li><p>One item</p></li><li><p>Another item</p></li><li><p>A really long item which is really far too long to be an item in a talk. Points should really be only a single line unless they are really important.</p></li></ul></slide><slide><title>A second slide here</title><p>
+      Words and stuff
+    </p><ul><subslide><li><p>First thing</p></li><li><p>Also a first thing</p></li></subslide><subslide><li><p>Second thing</p></li></subslide><subslide><li><p>Third thing</p></li></subslide></ul></slide><slide><title>Put stuff next to other stuff</title><sidebyside width="40%"><p><img src="figs/client0.png" width="90%px"/></p><p>Thing two
+      <ul><li><p>a bit of this.</p></li><li><p>a bit of that.</p></li><li><p>a bit of the other.</p></li><li><p>and yet more bit.</p></li></ul></p></sidebyside></slide></section></slideshow></pretext>

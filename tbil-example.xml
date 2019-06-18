@@ -50,7 +50,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     </docinfo>
 
     <book xml:id="tbil-example">
-        <title>Team-Based Inquiry Learning - Linear Algebra</title>
+        <title>Linear Algebra</title>
+        <subtitle>For Team-Based Inquiry</subtitle>
 
         <frontmatter>
 
