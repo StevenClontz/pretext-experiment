@@ -31,7 +31,7 @@
         </slide>
         <xsl:for-each select="./*[@slide='single']">
           <slide>
-            <xsl:for-each select="./*[self::p or self::me or self::ol or self::ul]">
+            <xsl:for-each select="./*[self::p or self::me or self::ol or self::ul or self::title or self::statement]">
               <xsl:copy-of select="."/>
             </xsl:for-each>
           </slide>

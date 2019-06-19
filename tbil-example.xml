@@ -390,7 +390,17 @@ and <m>T(cf(x))=cT(f(x))</m>.
 </task>
 </activity>
 </section>
-    </chapter>
-    </book>
+<section>
+  <title>Another random section</title>
+  <theorem slide="single"><title>Foo</title><statement>Bar baz.</statement></theorem>
+</section>
+</chapter>
+<chapter><title>Another random chapter</title>
+<section>
+  <title>Another random section</title>
+  <theorem slide="single"><title>Foo</title><statement>Bar baz.</statement></theorem>
+</section>
+</chapter>
+</book>
 
 </pretext>
