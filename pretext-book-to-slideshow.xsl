@@ -43,7 +43,7 @@
               <xsl:if test="self::definition or self::example or self::activity or self::note or self::theorem or self::fact">
                 <xsl:attribute name="source-number"><xsl:apply-templates select="." mode="number"/></xsl:attribute>
               </xsl:if>
-              <xsl:for-each select="*[self::p or self::me or self::ol or self::ul or self::title or self::statement or self::introduction or self::task]">
+              <xsl:for-each select="*[self::p or self::sidebyside or self::me or self::ol or self::ul or self::title or self::statement or self::introduction or self::task]">
                 <xsl:copy-of select="."/>
               </xsl:for-each>
             </xsl:copy>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-06-19T21:30:45Z    *-->
+<!--*    on 2019-06-19T23:46:44Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -14,17 +14,23 @@
 <body>
 <article class="theorem-like"><h6 class="heading">
 <span class="type">Fact</span> <span class="codenumber">1.1.5</span>.</h6>
-<p>If \(L:V\to W\) is linear, then</p>
+<p>A map between Euclidean spaces \(T:\IR^n\to\IR^m\) is linear exactly when every component of the output is a linear combination of the components of \(\IR^n\text{.}\)</p>
+<p>For example, the following map is definitely linear because \(x-z\) and \(3y\) are linear combinations of \(x,y,z\text{:}\)</p>
 <div class="displaymath">
 \begin{equation*}
-L(\vec z)=L(0\vec v)=0L(\vec v)=\vec z
+T\left(\begin{bmatrix} x \\ y \\ z \end{bmatrix} \right)
+=
+\begin{bmatrix} x-z \\ 3y \end{bmatrix}
+=
+\begin{bmatrix} 1x+0y-1z \\ 0x+3y+0z \end{bmatrix}
 \end{equation*}
 </div>
-<p>where \(\vec z\) is the additive identity of the vector spaces \(V,W\text{.}\)</p>
-<p>Put another way, an easy way to prove that a map like \(T(f(x)) = f'(x)+x^3\) can't be linear is because</p>
+<p>But this map is not linear because \(x^2\text{,}\) \(y+3\text{,}\) and \(y-2^x\) are not linear combinations (even though \(x+y\) is):</p>
 <div class="displaymath">
 \begin{equation*}
-T(0)=\frac{d}{dx}[0]+x^3=0+x^3=x^3\not=0.
+T\left(\begin{bmatrix} x \\ y \end{bmatrix} \right)
+=
+\begin{bmatrix} x+y \\ x^2 \\ y+3 \\ y-2^x \end{bmatrix}
 \end{equation*}
 </div></article><span class="incontext"><a href="section-standard-A1.html#fact-2">in-context</a></span>
 </body>

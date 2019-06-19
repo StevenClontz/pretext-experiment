@@ -104,12 +104,12 @@ More precisely, if <m>V</m> and <m>W</m> are vector spaces, a map
 <m>T:V\rightarrow W</m> is called a linear transformation if
     </p>
     <ol>
-<li> <m>T(\vec{v}+\vec{w}) = T(\vec{v})+T(\vec{w})</m>
+<li slide-step="true"> <m>T(\vec{v}+\vec{w}) = T(\vec{v})+T(\vec{w})</m>
       for any <m>\vec{v},\vec{w} \in V</m>.</li>
-<li> <m>T(c\vec{v}) = cT(\vec{v})</m>
+<li slide-step="true"> <m>T(c\vec{v}) = cT(\vec{v})</m>
       for any <m>c \in \IR,\vec{v} \in V</m>.</li>
     </ol>
-    <p>
+    <p slide-step="true">
 In other words, a map is linear when vector space operations
 can be applied before or after the transformation without affecting the result.
     </p>
@@ -212,6 +212,10 @@ Since the resulting vectors are different,
 <m>T</m> is not a linear transformation.
   </p>
 </example>
+
+<fact slide="single">
+  <sidebyside width="50%"><p>first side</p><p>second side</p></sidebyside>
+</fact>
 
 <p>
 Here is some text I'm adding that I won't want to be
