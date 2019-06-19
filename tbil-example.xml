@@ -73,7 +73,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         </frontmatter>
 
-        <chapter><title>Module A: Algebra of Linear Transformations</title>
+        <chapter><title>Algebra of Linear Transformations</title>
         <introduction slide="single">
            <p>
              In this module, we will explore how to describe transformations
@@ -171,7 +171,7 @@ Therefore <m>T</m> is a linear transformation.
   </p>
 </example>
 
-<example>
+<example slide="single">
   <p>
 Let <m>T : \IR^2 \rightarrow \IR^4</m> be given by
   </p>
@@ -219,7 +219,7 @@ in slides, but would be useful context for the student
 or instructor when viewing the full textbook.
 </p>
 
-<fact>
+<fact slide="single">
   <p>
 A map between Euclidean spaces <m>T:\IR^n\to\IR^m</m> is linear
 exactly when every component of the output is a linear combination
@@ -247,7 +247,7 @@ are not linear combinations (even though <m>x+y</m> is):
   </me>
 </fact>
 
-<activity><p><em>(~5 min)</em></p>
+<activity slide="single"><p><em>(~5 min)</em></p>
   <p>
   Recall the following rules from calculus, where <m>D:\Poly\to\Poly</m>
   is the derivative map defined by <m>D(f(x))=f'(x)</m> for each
@@ -270,7 +270,7 @@ are not linear combinations (even though <m>x+y</m> is):
   </ol>
 </activity>
 
-<activity><p><em>(~10 min)</em></p>
+<activity slide="single"><p><em>(~10 min)</em></p>
   <p>
 Let the polynomial maps <m>S: \Poly^4 \rightarrow \Poly^3</m>
 and <m>T: \Poly^4 \rightarrow \Poly^3</m> be defined by
@@ -294,7 +294,7 @@ Put another way, an easy way to prove that a map like
   </p>
 </fact>
 
-<note>
+<note slide="single">
   <p>
 Showing <m>L:V\to W</m> is not a linear transformation can be done by finding an example
 for any one of the following.
@@ -328,7 +328,7 @@ space is/isn't a subspace.
   </p>
 </note>
 
-<activity>
+<activity slide="single">
 <introduction>
 <p><em>(~15 min)</em></p>
   <p>
@@ -369,7 +369,7 @@ But let's also assume that this sentence is extra text that should
 only be in the textbook, not in the slides.
 </p>
 
-<activity><introduction><p><em>(~20 min)</em></p>
+<activity slide="single"><introduction><p><em>(~20 min)</em></p>
   <p>
 Let the polynomial maps <m>S: \Poly \rightarrow \Poly</m>
 and <m>T: \Poly \rightarrow \Poly</m> be defined by
